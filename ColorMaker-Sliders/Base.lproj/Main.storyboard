@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ColorMaker_Sliders" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZz-0v-KCH">
+                                <rect key="frame" x="160" y="231" width="280" height="280"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="cAU-9S-QMC"/>
+                                    <constraint firstAttribute="width" constant="280" id="ufU-1q-CLm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JXC-7s-EHC">
+                                <rect key="frame" x="160" y="47" width="280" height="143"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Red" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0N-g3-82f">
+                                        <rect key="frame" x="10" y="20" width="39" height="28"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="C4N-7B-qx6">
+                                        <rect key="frame" x="102" y="20" width="160" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" id="Qvr-yv-NyL"/>
+                                        </constraints>
+                                        <color key="minimumTrackTintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="EmZ-wb-wgo"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vF1-1l-rkD">
+                                        <rect key="frame" x="10" y="56" width="60" height="28"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="hzF-hr-1gc">
+                                        <rect key="frame" x="102" y="56" width="160" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" id="JYt-8V-upI"/>
+                                        </constraints>
+                                        <color key="minimumTrackTintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="smM-HV-b7x"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4M8-NQ-XEa">
+                                        <rect key="frame" x="10" y="92" width="44" height="28"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="nlg-2o-6ej">
+                                        <rect key="frame" x="102" y="94" width="160" height="31"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="156" id="agJ-Hz-vcA"/>
+                                        </constraints>
+                                        <color key="minimumTrackTintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="changeColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="gkR-uF-Gg5"/>
+                                        </connections>
+                                    </slider>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="280" id="Col-wp-Rjr"/>
+                                    <constraint firstItem="4M8-NQ-XEa" firstAttribute="top" secondItem="vF1-1l-rkD" secondAttribute="bottom" constant="8" id="Gdn-SB-2Pp"/>
+                                    <constraint firstItem="C4N-7B-qx6" firstAttribute="leading" secondItem="e0N-g3-82f" secondAttribute="trailing" constant="55" id="KoR-Ve-CH3"/>
+                                    <constraint firstItem="e0N-g3-82f" firstAttribute="top" secondItem="JXC-7s-EHC" secondAttribute="top" constant="20" id="PYA-sC-N1w"/>
+                                    <constraint firstAttribute="height" constant="143" id="S5w-qt-Kdo"/>
+                                    <constraint firstItem="C4N-7B-qx6" firstAttribute="top" secondItem="JXC-7s-EHC" secondAttribute="top" constant="20" id="SvZ-mC-1kS"/>
+                                    <constraint firstItem="hzF-hr-1gc" firstAttribute="top" secondItem="C4N-7B-qx6" secondAttribute="bottom" constant="6" id="VrH-Pp-WQ3"/>
+                                    <constraint firstItem="hzF-hr-1gc" firstAttribute="leading" secondItem="vF1-1l-rkD" secondAttribute="trailing" constant="34" id="Xb9-wd-4zk"/>
+                                    <constraint firstItem="vF1-1l-rkD" firstAttribute="leading" secondItem="JXC-7s-EHC" secondAttribute="leading" constant="10" id="aPZ-dL-T06"/>
+                                    <constraint firstItem="e0N-g3-82f" firstAttribute="leading" secondItem="JXC-7s-EHC" secondAttribute="leading" constant="10" id="awo-fU-pYr"/>
+                                    <constraint firstItem="nlg-2o-6ej" firstAttribute="top" secondItem="hzF-hr-1gc" secondAttribute="bottom" constant="8" id="gxd-2w-ph6"/>
+                                    <constraint firstItem="nlg-2o-6ej" firstAttribute="leading" secondItem="4M8-NQ-XEa" secondAttribute="trailing" constant="50" id="je2-CA-ZnE"/>
+                                    <constraint firstItem="4M8-NQ-XEa" firstAttribute="leading" secondItem="JXC-7s-EHC" secondAttribute="leading" constant="10" id="jsk-aU-JgC"/>
+                                    <constraint firstItem="vF1-1l-rkD" firstAttribute="top" secondItem="e0N-g3-82f" secondAttribute="bottom" constant="8" id="kyc-c0-gl1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="oZz-0v-KCH" firstAttribute="top" secondItem="JXC-7s-EHC" secondAttribute="bottom" constant="41" id="Bv3-WW-ViN"/>
+                            <constraint firstAttribute="centerX" secondItem="oZz-0v-KCH" secondAttribute="centerX" id="H6i-Kr-7bv"/>
+                            <constraint firstAttribute="centerX" secondItem="JXC-7s-EHC" secondAttribute="centerX" id="dHf-p8-8Fr"/>
+                            <constraint firstItem="JXC-7s-EHC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="27" id="fcI-Vb-9Dx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blueSlider" destination="nlg-2o-6ej" id="SW7-ca-kbx"/>
+                        <outlet property="colorView" destination="oZz-0v-KCH" id="baC-k5-95Z"/>
+                        <outlet property="greenSlider" destination="hzF-hr-1gc" id="qeL-xB-PMQ"/>
+                        <outlet property="redSlider" destination="C4N-7B-qx6" id="NdY-kc-iz8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
